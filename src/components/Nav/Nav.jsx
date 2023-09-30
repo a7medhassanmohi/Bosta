@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import LogoAR from "../Logo/LogoAR";
 import LogoEn from "../Logo/LogoEn";
 function DropDown({title,render,wrapperStyle}) {
+  const { t, i18n } = useTranslation();
     const [openMenu, setopenMenu] = useState(false)
     const toggleMenu = () => {
         setopenMenu(!openMenu);
@@ -26,7 +27,7 @@ function DropDown({title,render,wrapperStyle}) {
   return (
     <div className={`${styles.dropDown_container} closemenu `}>
     <li className={styles.track} onClick={toggleMenu}>{title}</li>
-    {openMenu && <div className={`${styles.menu} ${wrapperStyle} `} >
+    {openMenu && <div className={`${styles.menu} ${wrapperStyle} `}  direction={i18n.language == "ar" ? "rtl" : "ltr"}>
 {render()}
     </div>}
     
