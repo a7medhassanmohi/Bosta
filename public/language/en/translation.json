@@ -1,0 +1,35 @@
+{
+  "main":"main",
+  "prices":"prices",
+  "sales":"call sales",
+  "log":"log in",
+  "track_ship":"Track Shipment",
+  "shipNumber":"Tracking no",
+  "lastUpdate":"last Update",
+  "customerName":"Customer Name",
+  "deliveryTime":"Delivery Time",
+  "TICKET_CREATED":"Shipment received",
+  "PACKAGE_RECEIVED":"Shipment received from merchant",
+  "OUT_FOR_DELIVERY":"Shipping went out for delivery",
+  "DELIVERED":"delivered",
+  "CANCELLED":"Canceled",
+  "DELIVERED_TO_SENDER":"delivered to sender",
+
+  "3": "Shipping postponed for another day",
+  "7": "Client does not reply",
+  "1": "The client is not there.",
+  "shippingDetails":"Shipping Details",
+  "branch":"branch",
+  "date":"date",
+  "time":"time",
+  "deliveryAddress":"delivery Address",
+  "isProblem":"Is there a problem with your shipment?",
+  "reportProblem":"Report the problem",
+
+  "details":"details",
+  "search":"search",
+
+    "lang-ar": "Arabic",
+    "lang-en": "English"
+   
+  }
