@@ -12,6 +12,7 @@ i18n
     .init({
         supportedLngs: ['ar', 'en'],
         fallbackLng: "ar",
+        lng: 'ar',
         
         react: {
 
