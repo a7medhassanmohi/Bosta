@@ -43,7 +43,7 @@ function App() {
     "DELIVERED",
   ];
   let checkCuurentState = Item?.CurrentStatus?.state;
-  const lastSideAction = Item?.TransitEvents?.reverse().find(
+  const lastSideAction = Item?.TransitEvents?.slice()?.reverse().find(
     (action) => action.state === "WAITING_FOR_CUSTOMER_ACTION"
   );
 
@@ -106,7 +106,7 @@ function App() {
                 lastActionIndex >= 0 &&
                 isCancel &&
                 !isDelivered;
-
+                console.log();
               return (
                 <Fragment key={i}>
                   <div
